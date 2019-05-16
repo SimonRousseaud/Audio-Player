@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Audio player</title>
+  </head>
+  <body>
+<section class="mon__player">
+
+
+  <section class="menu">
+      <h2 class="menu__titre">BIBLIOTHEQUE</h2>
+      <h3 class="menu__playlist">House</h3>
+    <ul class="menu__list">
+    </ul>
+    <h3 class="menu__playlist">Hip Hop</h3>
+    <ul class="menu__list">
+      <li class="menu__song">Oui</li>
+      <li class="menu__song">Non</li>
+      <li class="menu__song">Peut être</li>
+      <li class="menu__song">Sans doute</li>
+      <li class="menu__song">Mais non</li>
+    </ul>
+  </section>
+
+  <section class="image">
+    <img width="100px" height="100px" class="player__img">
+  </section>
+
+  <section class="player">
+    <audio class="player__audio" src="son2.mp3"></audio>
+
+  <div class="player__info">
+    <img src="house/son1.png" class="player__photo">
+    <div class="player__Dnom_chanson">
+      <p class="player__nom_chanson">Perfect 10</p>
+    </div>
+    <div class="player__Dnom_artiste">
+      <p class="player__nom_artiste">Unknown Brain</p>
+    </div>
+  </div>
+
+
+    <div class="player__global">
+      <div class="player__gestion">
+        <div class="player__btn">
+          <img class="player__btn__img " src="icones/svg/stop.svg">
+
+        </div>
+        <div class="player__btn">
+          <img class="player__btn__img" src="icones/svg/previous.svg">
+        </div>
+        <div class="player__btn">
+
+          <img class="player__btn__img" fill="red" src="icones/svg/play.svg">
+        </div>
+        <div class="player__btn">
+          <img class="player__btn__img" src="icones/svg/next.svg">
+        </div>
+        <div class="player__btn">
+          <img class="player__btn__img" src="icones/svg/repeat.svg">
+        </div>
+
+      </div>
+
+      <div class="player__progress">
+        <div class="player__bar"></div>
+        <div class="player__boule"></div>
+        </div>
+        <div class="player__Dtemps">
+          <p class="player__temps"></p>
+        </div>
+
+    </div>
+
+    <div class="player__sound__gestion">
+       <img class="player__sound__button__img" src="icones/svg/volume.svg">
+       <input class="player__vol" type="range" min="0" max="1" step="0.1" value="1">
+    </div>
+
+  </section>
+</section>
+<script src="js.js"></script>
+  </body>
+</html>
